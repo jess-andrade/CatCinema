@@ -44,7 +44,7 @@ const Movie = () => {
     <div className="movie-page">
       {movie && (
         <>
-          <MovieCard movie={movie} showLink={false} />
+          <MovieCard movie={movie} styleWhenNoImage={{display: "none"}} showLink={false} />
 
           <p className="tagline">{movie.tagline}</p>
           <div className="info">
@@ -76,7 +76,7 @@ const Movie = () => {
           </div>
 
           <div className="img">
-            <Link to="/"><img src='/public/cat.png' width="90px" /></Link>
+            <Link to="/"><img src='/cat.png' width="90px" /></Link>
           </div>
         </>
       )}

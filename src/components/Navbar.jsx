@@ -26,7 +26,7 @@ export default function Navbar() {
 
       <div className='logo'>
         <Link to="/">
-          <img src='/public/cat.png' width="70px" />
+          <img src='/cat.png' width="70px" />
         </Link>
 
         <h2>

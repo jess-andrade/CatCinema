@@ -4,10 +4,10 @@ import { FaStar } from "react-icons/fa";
 const imagesURL = import.meta.env.VITE_IMG;
 
 //* showLink - hide button, to reuse in other parts of the code
-const MovieCard = ({ movie, showLink = true, isSpotlight = false }) => {
+const MovieCard = ({ movie, showLink = true, styleWhenNoImage={} }) => {
   return (
     <div className="movie-card">
-      {movie.poster_path ? <img src={imagesURL + movie.poster_path} /> : <img src='/wimg3.png' alt={movie.title} />}
+      {movie.poster_path ? <img src={imagesURL + movie.poster_path} /> : <img src='/wimg3.png' style={styleWhenNoImage} alt={movie.title} />}
 
       <h2>{movie.title}</h2>
       <p>
