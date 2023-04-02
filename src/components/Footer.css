@@ -1,0 +1,46 @@
+:root {
+  --color1: #df9aff;
+  --color2: #ad75fe;
+  --color3: #7c51fc;
+  --color4: #4a2cfb;
+  --color5: #1808f9;
+  --backgound: rgb(0, 0, 0);
+  --grey: rgb(24, 24, 24);
+}
+
+.footer {
+  background-color: var(--grey);
+  color: white;
+  padding: 3em;
+  text-align: center;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list li:hover {
+  color: var(--color3);
+}
+
+
+.social_list svg {
+  font-size: 1.5 em;
+  cursor: pointer;
+}
+
+.copy_right {
+  margin-top: 2em;
+}
+
+.copy_right span {
+  font-weight: bold;
+  color: var(--color3);
+  ;
+}

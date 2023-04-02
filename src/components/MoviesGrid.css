@@ -1,0 +1,76 @@
+:root {
+  --color1: #df9aff;
+  --color2: #ad75fe;
+  --color3: #7c51fc;
+  --color4: #4a2cfb;
+  --color5: #4d0e84;
+  --backgound: rgb(0, 0, 0);
+  --grey: rgb(24, 24, 24);
+}
+
+.container .title {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.title .query-text {
+  color: var(--color3);
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movies-container div {
+  width: 30%;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--grey);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/*max image width*/
+.movies-container div img {
+  max-width: 100%;
+  max-height: 713px;
+  border-radius: 10px;
+}
+
+.movies-container div img,
+.movies-container div p {
+  margin-bottom: 1rem;
+}
+
+.movies-container div h2 {
+  margin-bottom: 1.5rem;
+}
+
+.movies-container div svg {
+  color: var(--color3);
+}
+
+.movies-container div a {
+  background-color: var(--color3);
+  border: 2px solid var(--color3);
+  border-radius: 4px;
+  color: #000;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.movies-container div a:hover {
+  background-color: transparent;
+  color: var(--color3);
+}
